@@ -11,13 +11,13 @@ import java.util.Random;
 public class SortingAlgorithmsTest {
 	private static final Random rand = new Random();
 	
-	public static final int shortLength = 10;
-	public static final int mediumLength = 1000;
-	public static final int longLength = 1000000;
+	public static final int SHORT_LENGTH = 10;
+	public static final int MEDIUM_LENGTH = 1000;
+	public static final int LONG_LENGTH = 1000000;
 	
 	@Test
 	public void testBogoWithInts() {
-		int[] arr = makeIntArray(shortLength);
+		int[] arr = makeIntArray(SHORT_LENGTH);
 		Bogosort.bogoSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -25,7 +25,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testBogoWithStrings() {
-		String[] arr = makeStringArray(shortLength);
+		String[] arr = makeStringArray(SHORT_LENGTH);
 		Bogosort.bogoSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -41,7 +41,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test 
 	public void testMergeWithIntsShort() {
-		int[] arr = makeIntArray(shortLength);
+		int[] arr = makeIntArray(SHORT_LENGTH);
 		Mergesort.mergeSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -49,7 +49,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test 
 	public void testMergeWithIntsMedium() {
-		int[] arr = makeIntArray(mediumLength);
+		int[] arr = makeIntArray(MEDIUM_LENGTH);
 		Mergesort.mergeSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -57,7 +57,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test 
 	public void testMergeWithIntsLong() {
-		int[] arr = makeIntArray(longLength);
+		int[] arr = makeIntArray(LONG_LENGTH);
 		Mergesort.mergeSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -65,7 +65,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test 
 	public void testMergeWithStringsShort() {
-		String[] arr = makeStringArray(shortLength);
+		String[] arr = makeStringArray(SHORT_LENGTH);
 		Mergesort.mergeSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -73,7 +73,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test 
 	public void testMergeWithStringMedium() {
-		String[] arr = makeStringArray(mediumLength);
+		String[] arr = makeStringArray(MEDIUM_LENGTH);
 		Mergesort.mergeSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -81,7 +81,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test 
 	public void testMergeWithStringLong() {
-		String[] arr = makeStringArray(longLength);
+		String[] arr = makeStringArray(LONG_LENGTH);
 		Mergesort.mergeSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -97,7 +97,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testQuickWithIntsShort() {
-		int[] arr = makeIntArray(shortLength);
+		int[] arr = makeIntArray(SHORT_LENGTH);
 		Quicksort.quickSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -105,7 +105,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testQuickWithIntsMedium() {
-		int[] arr = makeIntArray(mediumLength);
+		int[] arr = makeIntArray(MEDIUM_LENGTH);
 		Quicksort.quickSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -113,7 +113,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testQuickWithIntsLong() {
-		int[] arr = makeIntArray(longLength);
+		int[] arr = makeIntArray(LONG_LENGTH);
 		Quicksort.quickSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -121,7 +121,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testQuickWithStringsShort() {
-		String[] arr = makeStringArray(shortLength);
+		String[] arr = makeStringArray(SHORT_LENGTH);
 		Quicksort.quickSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -129,7 +129,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testQuickWithStringsMedium() {
-		String[] arr = makeStringArray(mediumLength);
+		String[] arr = makeStringArray(MEDIUM_LENGTH);
 		Quicksort.quickSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -137,7 +137,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testQuickWithStringsLong() {
-		String[] arr = makeStringArray(longLength);
+		String[] arr = makeStringArray(LONG_LENGTH);
 		Quicksort.quickSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -153,7 +153,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void testHeapWithIntsShort() {
-		int[] arr = makeIntArray(shortLength);
+		int[] arr = makeIntArray(SHORT_LENGTH);
 		Heapsort.heapSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -161,7 +161,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void TestHeapWithIntsMedium() {
-		int[] arr = makeIntArray(mediumLength);
+		int[] arr = makeIntArray(MEDIUM_LENGTH);
 		Heapsort.heapSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -169,7 +169,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void TestHeapWithIntsLong() {
-		int[] arr = makeIntArray(longLength);
+		int[] arr = makeIntArray(LONG_LENGTH);
 		Heapsort.heapSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -177,7 +177,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void TestHeapWithStringsShort() {
-		String[] arr = makeStringArray(shortLength);
+		String[] arr = makeStringArray(SHORT_LENGTH);
 		Heapsort.heapSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -185,7 +185,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void TestHeapWithStringsMedium() {
-		String[] arr = makeStringArray(mediumLength);
+		String[] arr = makeStringArray(MEDIUM_LENGTH);
 		Heapsort.heapSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
@@ -193,7 +193,7 @@ public class SortingAlgorithmsTest {
 	
 	@Test
 	public void TestHeapWithStringLong() {
-		String[] arr = makeStringArray(longLength);
+		String[] arr = makeStringArray(LONG_LENGTH);
 		Heapsort.heapSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
