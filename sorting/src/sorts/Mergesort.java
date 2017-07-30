@@ -3,7 +3,8 @@ package sorts;
 public class Mergesort {
 
 	/**
-	 * Sorts the given array using Mergesort. O(n lg n) runtime, O(n) extra space needed.
+	 * Sorts the given array using Mergesort. 
+	 * O(n lg n) worst case runtime, O(n) extra space needed.
 	 * 
 	 * @param arr array to be sorted
 	 */
@@ -47,7 +48,8 @@ public class Mergesort {
 	}
 
 	/**
-	 * Sorts the given array using Mergesort. O(n lg n) runtime, O(n) extra space needed.
+	 * Sorts the given array using Mergesort. 
+	 * O(n lg n) worst case runtime, O(n) extra space needed.
 	 * 
 	 * @param arr array to be sorted
 	 */

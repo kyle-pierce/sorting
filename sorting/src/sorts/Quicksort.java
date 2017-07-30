@@ -5,10 +5,11 @@ import auxiliary.Arrays;
 public class Quicksort {
 
 	/**
-	 * Sorts the given array using Quicksort. O(n^2) runtime, no extra space needed.
+	 * Sorts the given array using Quicksort. 
+	 * O(n^2) worst case runtime, no extra space needed.
 	 * 
 	 * Despite the above asymptotic runtime analysis, the runtime is usually
-	 * much more alike that of O(n lg n) algorithms like Mergesort if not faster.
+	 * much more alike that of O(n lg n) algorithms like Mergesort if not better.
 	 * 
 	 * @param arr
 	 */
@@ -55,7 +56,8 @@ public class Quicksort {
 	}
 	
 	/**
-	 * Sorts the given array using Quicksort. O(n^2) runtime, no extra space needed.
+	 * Sorts the given array using Quicksort. 
+	 * O(n^2) worst case runtime, no extra space needed.
 	 * 
 	 * Despite the above asymptotic runtime analysis, the runtime is usually
 	 * much more alike that of O(n lg n) algorithms like Mergesort if not faster.

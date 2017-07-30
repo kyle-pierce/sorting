@@ -1,8 +1,13 @@
-package sorts;
+package test;
 
 import org.junit.*;
 
 import auxiliary.Arrays;
+import sorts.Bogosort;
+import sorts.BubbleSort;
+import sorts.Heapsort;
+import sorts.Mergesort;
+import sorts.Quicksort;
 
 import static org.junit.Assert.*;
 
@@ -195,6 +200,48 @@ public class SortingAlgorithmsTest {
 	public void TestHeapWithStringLong() {
 		String[] arr = makeStringArray(LONG_LENGTH);
 		Heapsort.heapSort(arr);
+		
+		assertTrue(Arrays.isSorted(arr));
+	}
+	
+	// O(N^2) sorts do not have million element tests
+	
+	@Test
+	public void testBubbleEmpty() {
+		int[] arr = makeIntArray(0);
+		BubbleSort.bubbleSort(arr);
+		
+		assertTrue(Arrays.isSorted(arr));
+	}
+	
+	@Test
+	public void testBubbleWithIntShort() {
+		int[] arr = makeIntArray(SHORT_LENGTH);
+		BubbleSort.bubbleSort(arr);
+		
+		assertTrue(Arrays.isSorted(arr));
+	}
+	
+	@Test
+	public void testBubbleWithIntsMedium() {
+		int[] arr = makeIntArray(MEDIUM_LENGTH);
+		BubbleSort.bubbleSort(arr);
+		
+		assertTrue(Arrays.isSorted(arr));
+	}
+	
+	@Test
+	public void testBubbleWithStringsShort() {
+		String[] arr = makeStringArray(SHORT_LENGTH);
+		BubbleSort.bubbleSort(arr);
+		
+		assertTrue(Arrays.isSorted(arr));
+	}
+	
+	@Test
+	public void testBubbleWithStringsMedium() {
+		String[] arr = makeStringArray(MEDIUM_LENGTH);
+		BubbleSort.bubbleSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
 	}

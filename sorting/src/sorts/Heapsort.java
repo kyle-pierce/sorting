@@ -5,7 +5,8 @@ import structures.MinHeap;
 public class Heapsort {
 	
 	/**
-	 * Sorts the given array using heapsort. O(n lg n) runtime, O(n) extra space.
+	 * Sorts the given array using heapsort. 
+	 * O(n lg n) worst case runtime, O(n) extra space.
 	 * 
 	 * @param arr array to be sorted.
 	 */
@@ -21,7 +22,8 @@ public class Heapsort {
 	}
 	
 	/**
-	 * Sorts the given array using heapsort. O(n lg n) runtime, O(n) extra space.
+	 * Sorts the given array using heapsort. 
+	 * O(n lg n) worst case runtime, O(n) extra space.
 	 * 
 	 * @param arr array to be sorted.
 	 */
