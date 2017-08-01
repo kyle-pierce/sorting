@@ -4,7 +4,7 @@ import org.junit.*;
 
 import auxiliary.Arrays;
 import sorts.Bogosort;
-import sorts.BubbleSort;
+import sorts.Bubblesort;
 import sorts.Heapsort;
 import sorts.Mergesort;
 import sorts.Quicksort;
@@ -209,7 +209,7 @@ public class SortingAlgorithmsTest {
 	@Test
 	public void testBubbleEmpty() {
 		int[] arr = makeIntArray(0);
-		BubbleSort.bubbleSort(arr);
+		Bubblesort.bubbleSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
 	}
@@ -217,7 +217,7 @@ public class SortingAlgorithmsTest {
 	@Test
 	public void testBubbleWithIntShort() {
 		int[] arr = makeIntArray(SHORT_LENGTH);
-		BubbleSort.bubbleSort(arr);
+		Bubblesort.bubbleSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
 	}
@@ -225,7 +225,7 @@ public class SortingAlgorithmsTest {
 	@Test
 	public void testBubbleWithIntsMedium() {
 		int[] arr = makeIntArray(MEDIUM_LENGTH);
-		BubbleSort.bubbleSort(arr);
+		Bubblesort.bubbleSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
 	}
@@ -233,7 +233,7 @@ public class SortingAlgorithmsTest {
 	@Test
 	public void testBubbleWithStringsShort() {
 		String[] arr = makeStringArray(SHORT_LENGTH);
-		BubbleSort.bubbleSort(arr);
+		Bubblesort.bubbleSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
 	}
@@ -241,7 +241,7 @@ public class SortingAlgorithmsTest {
 	@Test
 	public void testBubbleWithStringsMedium() {
 		String[] arr = makeStringArray(MEDIUM_LENGTH);
-		BubbleSort.bubbleSort(arr);
+		Bubblesort.bubbleSort(arr);
 		
 		assertTrue(Arrays.isSorted(arr));
 	}

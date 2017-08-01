@@ -2,7 +2,7 @@ package sorts;
 
 import auxiliary.Arrays;
 
-public class BubbleSort {
+public class Bubblesort {
 	
 	
 	/**
