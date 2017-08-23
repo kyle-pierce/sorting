@@ -6,7 +6,7 @@ public class Bogosort {
 	
 	/**
 	 * Sorts the given array using Bogosort. Note the nondeterministic
-	 * nature of this method prevents runtime from being analyzed.
+	 * nature of this method prevents runtime from being analyzed. 
 	 * 
 	 * @param arr arrays to be sorted
 	 */
